@@ -15,7 +15,7 @@
 <body>
     <!-- шапка -->
     <header class="header">
-        <div class="header conteiner">
+        <div class="conteiner">
         <a class="logo" href="./index.html">Web<span class="logo-second">Studio</span></a>
 
         <nav>
@@ -37,12 +37,15 @@
 
         <!-- герой -->
     <section class="herou">
+        <div class="conteiner">
         <h1 class="herou-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="herou-button active" type="button">Замовити послугу</button>
+        </div>
     </section>
 
     <!-- особливості -->
-    <section class="features conteiner">
+    <section class="features">
+        <div class="conteiner">
             <!-- features title приховати -->
         <h2 class="features title">Особливості</h2>
         <ul class="features-list">
@@ -63,6 +66,7 @@
                 <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
+        </div>
     </section>
 
     <!-- діяльність -->
@@ -93,48 +97,58 @@
     </section>
 
     <!-- команда -->
-    <section class="team conteiner">
+    <section class="team">
+        <div class="conteiner">
         <h2 class="team title">Наша команда</h2>
         <ul class="team-member">
-            <li class="team-member item">
-                <img class="member-photo" src="./images/photo1.jpg" 
-                alt="Фото Ігоря Дем'яненко"
-                width="270" 
-                />
-                <h3 class="member-name">Ігор Дем'яненко</h3>
-                <p class="member-position" lang="en">Product Designer</p>
-            </li>
-            <li class="team-member item">
-                <img class="member-photo" src="./images/photo2.jpg" 
-                alt="Фото Ольги Реніної"
-                width="270"
-                />
-                <h3 class="member-name">Ольга Рєпіна</h3>
-                <p class="member-position" lang="en">Frontend Developer</p>
-            </li>
-            <li class="team-member item">
-                <img class="member-photo" src="./images/photo3.jpg" 
-                alt="Фото Миколи Тарасова"
-                width="270" 
-                />
-                <h3 class="member-name">Микола Тарасов</h3>
-                <p class="member-position" lang="en">Marketing</p>
-            </li>
-            <li class="team-member item">
+                <li class="team-item">
+                    <img class="member-photo" src="./images/photo1.jpg" 
+                    alt="Фото Ігоря Дем'яненко"
+                    width="270" 
+                    />
+                    <div class="text-content">
+                    <h3 class="member-name">Ігор Дем'яненко</h3>
+                    <p class="member-position" lang="en">Product Designer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img class="member-photo" src="./images/photo2.jpg" 
+                    alt="Фото Ольги Реніної"
+                    width="270"
+                    />
+                    <div class="text-content">
+                    <h3 class="member-name">Ольга Рєпіна</h3>
+                    <p class="member-position" lang="en">Frontend Developer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img class="member-photo" src="./images/photo3.jpg" 
+                    alt="Фото Миколи Тарасова"
+                    width="270" 
+                    />
+                    <div class="text-content">
+                    <h3 class="member-name">Микола Тарасов</h3>
+                    <p class="member-position" lang="en">Marketing</p>
+                    </div>
+                </li>
+            <li class="team-item">
                 <img class="member-photo" src="./images/photo4.jpg" 
                 alt="Фото Михайла Єрмакова"
                 width="270" 
                 />
+                <div class="text-content">
                 <h3 class="member-name">Михайло Єрмаков</h3>
                 <p class="member-position" lang="en">UI Designer</p>
+                </div>
             </li>
         </ul>
+        </div>
     </section>
     </main>
 
     <!-- підвал -->
-    <footer class="footer conteiner">
-        <!-- <div class="conteiner"> -->
+    <footer class="footer">
+        <div class="conteiner">
             <a class="logo" href="./index.html">Web<span class="logo-second">Studio</span></a>
             <ul class="footer-links">
                 <li>
@@ -147,7 +161,7 @@
                 <li><a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        <!-- </div> -->
+        </div>
     </footer>
 </body>
 </html>
