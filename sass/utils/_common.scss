@@ -1,0 +1,56 @@
+
+body {
+    background-color: $body-color;
+    font-family: "Roboto";
+    color: $primery-color;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.conteiner {
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1200px;
+    /* outline: 2px solid tomato; */
+}
+
+.title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.title--no-visibility {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,20 @@
+.logo {
+    display: block;
+
+    color: $secondery-color;
+
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo__second {
+    color: $logo-color;
+}
+
+.logo__second--invert {
+    margin-bottom: 20px;
+    color: $body-color;
+}
+
