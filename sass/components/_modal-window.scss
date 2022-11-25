@@ -8,18 +8,13 @@
     opacity: 1;
     visibility: visible;
     transition: $opacity, $visibility;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transition: $opacity, $visibility;
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-    transition: $transform;
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: $opacity, $visibility;
+    }
 }
 
 .modal {
@@ -35,6 +30,11 @@
     background-color: $body-color;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+        transition: $transform;
+    }
 }
 
 .modal__button {
@@ -47,21 +47,4 @@
     right: 8px;
     width: 30px;
     height: 30px;
-
-    background: $body-color;
-    fill: $logo-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: $fill;
-    
-    &:hover,
-    &:focus {
-        fill: $secondery-color;
-        outline: none;
-    }
-}
-
-.modal__icon {
-    display: inline-block;
 }

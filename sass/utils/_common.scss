@@ -38,19 +38,31 @@ ul {
     /* outline: 2px solid tomato; */
 }
 
+
+
 .title {
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @extend %font-h2;
+
+    &--herou {
+        @extend %font-h1;
+        color: $body-color;
+    }
+
+    &--no-visibility {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &--form {
+        @extend %font-form-title;
+        color: $primery-color;
+    }
 }
 
-.title--no-visibility {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-}
+
+

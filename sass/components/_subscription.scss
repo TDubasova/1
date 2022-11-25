@@ -7,11 +7,9 @@
 .subscription__title {
     display: block;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 0.88;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    
+    @extend %font-uppercase;
 }
 
 .subscription__input {
@@ -28,15 +26,18 @@
     border-radius: 4px;
 
     &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+        
+        @include font-size16 (400, 1.25)  
     }
     
     &:not(:placeholder-shown) {
         background-color: inherit;
         color: $body-color;
+        letter-spacing: 0.03em;
+        
+        @include font-size16 (400, 1.25)
     }
 }
 

@@ -37,17 +37,16 @@
 
 .member__name {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @include font-size16 (500, 1)
 }
 
 .member__position {
     color: $additional-color;
-    font-size: 16px;
-    line-height: 1;
     letter-spacing: 0.03em;
     text-align: center;
+
+    @include font-size16 (400, 1)
 }
